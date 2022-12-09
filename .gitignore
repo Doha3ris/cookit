@@ -1,5 +1,5 @@
-
 ###> symfony/framework-bundle ###
+.env
 /.env.local
 /.env.local.php
 /.env.*.local
@@ -8,3 +8,20 @@
 /var/
 /vendor/
 ###< symfony/framework-bundle ###
+
+###> phpunit/phpunit ###
+/phpunit.xml
+.phpunit.result.cache
+###< phpunit/phpunit ###
+
+###> front ###
+/node_modules/
+/public/build/
+/public/assets/
+/public/documentation/
+npm-debug.log
+yarn-error.log
+###< front ###
+
+.DS_Store
+.idea

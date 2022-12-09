@@ -20,5 +20,7 @@ services:
             - '../src/Entity/'
             - '../src/Kernel.php'
 
-    # add more service definitions when explicit configuration is needed
-    # please note that last definitions always *replace* previous ones
+    App\Twig\ViteAssetExtension:
+      arguments:
+        $environment: '%kernel.environment%'
+        $manifest: '%kernel.project_dir%/public/assets/manifest.json'
